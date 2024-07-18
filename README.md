@@ -15,7 +15,7 @@ QuizMania is a fun and engaging quiz application that combines education with en
 
 1. Clone the repository:
     
-    git clone https://github.com/Samin2712/QuizMania.git
+    git clone https://github.com/humaira228/QuizMania.git
     
 2. Navigate to the project directory:
     
