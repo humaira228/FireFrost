@@ -1,0 +1,405 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Scheherazade New', serif; */
+  }
+  body {
+    background-color: #f1f1f1;
+}
+   
+  .container {
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: whitesmoke;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .img img{
+    width:100%;
+    border-radius: 48px 48px 0px 0px;
+}
+  
+  .heading {
+    text-align: center;
+    font-size: 40px;
+    color: #e71212;
+    margin-bottom: 50px;
+    position: relative;
+    top: 50;
+    font-family: "Poppins", sans-serif;
+  }
+  .settings{
+    position: relative;
+    margin-top: 30px;
+  }
+  label {
+    display: block;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
+    position: relative;
+    left: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+  select {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #7F7FD5; 
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background-color: #10d9f0;
+    color: black;
+    font-size: 14px;
+    /* display: flex; */
+    position: relative;
+    left: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+  .start-screen .btn {
+    margin-top: 60px;
+  }
+  .btn{
+    width: 82%;
+    height: 60px;
+    background: tomato;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s linear;
+    position: relative;
+    left: 30px;
+    bottom: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+  .btn:hover{
+    background-color: rgb(10, 147, 237);
+  }
+
+  .rules{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    opacity: 0;
+    pointer-events: none;
+    font-family: 'Scheherazade New', serif;
+}
+
+.rules.activated{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50% -50%) scale(1);
+}
+.rulestitle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+.rulelist{
+    width: 80%;
+    margin: auto;
+}
+ol li{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 25px;
+    font-family: 'Scheherazade New', serif;
+}
+.button button{
+    font-weight: 600;
+    font-size: 20px;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top:29px;
+    font-family: 'Scheherazade New', serif;
+}
+.cnButton{
+    border-radius: 57px 0px 49px 0px;
+    margin-left: 65.3px;
+}
+.cnButton:hover{
+    background-color: rgb(10, 147, 237);
+}
+.ExitButton {
+    border-radius: 0px 47px 0px 46px; 
+}
+.ExitButton:hover {
+  background-color:  red;
+}
+.question{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    opacity: 0;
+    pointer-events: none;
+    font-family: 'Scheherazade New', serif;
+}
+
+.question.activeQ{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50% -50%) scale(1);
+}
+.QuestionHeader{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0px 30px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Scheherazade New', serif;
+}
+.QuestionHeader .title{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Scheherazade New', serif;
+}
+.timeCount{
+    color: blue;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    font-family: 'Scheherazade New', serif;
+}
+.seconds{
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 26px;
+    text-align: center;
+    background: rgb(50, 48, 48);
+    border: 1px solid rgb(50, 48, 48);
+    user-select: none;
+    font-family: 'Scheherazade New', serif;
+}
+.timeline{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: red;
+    font-family: 'Scheherazade New', serif;
+}
+.section{
+    padding: 25px 30px 20px 30px;
+}
+.text1{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Scheherazade New', serif;
+}
+.options{
+    padding: 20px 0px;
+    display: block;
+    font-family: 'Scheherazade New', serif;
+}
+.optionSec{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Scheherazade New', serif;
+}
+.optionSec:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #84c5fe;
+    transform: scale(1.1);
+}
+footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+.TQ{
+    padding-bottom:10px;
+    padding-left: 30px;
+}
+footer button{
+    font-weight: 600;
+    font-size: 20px;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    border-radius: 57px 0px 51px 0px;
+    transition: all 0.3s ease;
+    margin-top: 18px;
+    display: none;
+    font-family: 'Scheherazade New', serif;
+}
+footer .nextButton:hover{
+    background-color: rgb(10, 147, 237);
+}
+
+.optionSec.correct{
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+.optionSec.Incorrect{
+       color: #721c24;
+       background: #f8d7da;
+       border: 1px solid #f5c6cb;
+}
+.optionSec.disable{
+    pointer-events: none;
+}
+.question header .timeline{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    height: 20px;
+    background: linear-gradient(to right, #ea517c, #b478f1);
+    border-radius: 30px;
+}
+.resultBox{
+    width:320px;
+    height:580px;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 45px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-family: 'Scheherazade New', serif;
+}
+.resultImage img{
+    width: 100%;
+    border-radius: 48px 48px 0px 0px;
+    margin-bottom: 10px;
+    margin-top:  -32px;
+}
+
+.Scorebig{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Scheherazade New', serif;
+}
+
+.completeText{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Scheherazade New', serif;
+}
+.quizScore span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Scheherazade New', serif;
+}
+.quizScore span p{
+    padding:0 4px;
+    font-weight: 600;
+    font-family: 'Scheherazade New', serif;
+}
+
+.resultBox .lastbutton{
+    display: flex;
+    margin: 20px 0px;
+    font-family: 'Scheherazade New', serif;
+}
+
+.resultBox .lastbutton button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: 'Scheherazade New', serif;
+}
+
+.restartAg{
+    background-color: tomato;
+    color: white;
+    font-family: 'Scheherazade New', serif;
+}
+.restartAg:hover{
+    background-color: rgb(10, 147, 237);
+}
+.quit{
+    background-color: tomato;
+    color: white;
+    font-family: 'Scheherazade New', serif;
+}
+
+.quit:hover{
+    background-color: red;
+}
+.resultBox.activeResult{
+    z-index: 5;
+    opacity: 1;
+    transform: translate(-50% -50%) scale(1);
+    pointer-events: auto;
+}

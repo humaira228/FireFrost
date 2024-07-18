@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front_style.css">
+    <link rel="icon" href="pic/quiz.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>QuizMania</title>
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen">
+          <!-- <h1 class="heading">Quiz App</h1> -->
+          <div class="img">
+            <img src="pic/quiz_bg.jpg" alt="">
+           </div>
+           <div class="settings">
+            <label for="num-questions">Number of Questions:</label>
+            <select id="num-questions">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            <label for="time_sec">Select time per question:</label>
+            <select id="time_sec">
+              <option value="10">10 seconds</option>
+              <option value="15">15 seconds</option>
+              <option value="20">20 seconds</option>
+              <option value="25">25 seconds</option>
+              <option value="30">30 seconds</option>
+            </select>
+          </div>
+          <button class="btn">Start Quiz</button>
+        </div>
+    </div>
+        <div class="rules">
+            <div class="rulestitle">Some Rules of this Quiz</div>
+            <div class="rulelist">
+                 <ol>
+                    <li class="First_line"></li>
+                    <li>Once you select your answer, it can't be undone.</li>
+                    <li>You can't select any option once time goes off.</li>
+                    <li>You can't exit from the Quiz while you're playing.</li>
+                    <li>You'll get points on the basis of your correct answers.</li>
+                 </ol>
+            </div>
+            <div class="button">
+                <button class="ExitButton">Exit Quiz</button>
+                <button class="cnButton">Continue</button>
+            </div>
+        </div>
+        <div class="question">
+          <!-- <div class="page_size"> -->
+            <header class="QuestionHeader">
+                <div class="title">Start Exam</div>
+                <div class="timeCount">
+                    <div class="timeLeft">Time Left</div>
+                    <div class="seconds">15</div>
+                </div>
+                <div class="timeline"></div>
+            </header>
+            <div class="section">
+                 <div class="text1">
+                 </div>
+                 <div class="options">
+                    
+                 </div>
+            </div>
+          <!-- </div> -->
+            <footer>
+                <div class="TQ">
+                </div>
+                <button class="nextButton"></button>
+            </footer>
+        </div>
+    
+        <div class="resultBox">
+            <div class="resultImage">
+                <img src="pic/Quiz_finished.jpg" alt="">
+            </div>
+            <div class="Scorebig">
+                <!-- <p>SCORE: 5</p> -->
+            </div>
+            <div class="completeText">You Have Finished Your Quiz</div>
+            <div class="quizScore">
+                <!-- <span>Carry On 👍 You Got <p>2</p> Out of <p>5</p></span> -->
+            </div>
+            <div class="lastbutton">
+                <button class="restartAg">Replay</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+         
+    
+        <script src="jsdesign.js"></script>
+        <script src="Question.js"></script>
+</body>
+</html>
